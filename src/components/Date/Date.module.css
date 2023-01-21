@@ -1,0 +1,15 @@
+.date {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+
+  display: flex;
+  gap: 10px;
+  max-width: 120px;
+  align-items: center;
+}
+
+.day, .number  {
+  color: grey;
+}

@@ -1,0 +1,22 @@
+.title {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.item {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.item:hover {
+  opacity: .7;
+  transform: scale(.95);
+}

@@ -1,0 +1,35 @@
+.wrapper {
+  height: calc(100% - (50px));
+  transition: margin 0.5s;
+  margin-left: -500px;
+  position: absolute;
+  color: white;
+  z-index: 1;
+}
+
+.wrapper.isNavOpen {
+  margin-left: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  max-width: 200px;
+  min-height: 100%;
+  border-right: 1px solid #ccc;
+  background: #242424;
+}
+
+.navItem,
+.navItem_active {
+  color: white;
+  text-decoration: none;
+  transition: transform .3s;
+}
+
+.navItem_active {
+  opacity: 0.6;
+  transform: scale(.98);
+}
