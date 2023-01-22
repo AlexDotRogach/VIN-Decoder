@@ -5,3 +5,9 @@
 .title {
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+}

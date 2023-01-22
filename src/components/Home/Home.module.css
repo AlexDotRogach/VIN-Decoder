@@ -3,4 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .home {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .home {
+    font-size: 12px;
+  }
 }

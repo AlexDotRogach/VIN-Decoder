@@ -8,14 +8,17 @@ const SearchList = ({ title, type = 'full', clickList }) => {
   if (!data || data.length === 0) return;
 
   if (type === 'short') {
-    if (data.length <= 5) return;
-
-    data.length = 5;
-    data.push('...');
+    if (data.length > 5) {
+      data.length = 5;
+      data.push('...');
+    };
   }
 
-  if (type === "full") {
-
+  if (type === 'full') {
+    if (data.length > 20) {
+      data.length = 20;
+      data.push('Больше 20...');
+    };
   }
 
   return (
@@ -39,3 +42,4 @@ const SearchList = ({ title, type = 'full', clickList }) => {
 };
 
 export default SearchList;
+
